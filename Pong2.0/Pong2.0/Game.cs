@@ -15,9 +15,9 @@ namespace Pong2._0
             Glut.glutInit();
 
             Glut.glutInitDisplayMode(Glut.GLUT_SINGLE | Glut.GLUT_RGB);
-            Glut.glutInitWindowSize(500, 300);
-            Glut.glutInitWindowPosition(10, 10);
-            Glut.glutCreateWindow("PONG");
+            Glut.glutInitWindowSize(1024, 650);
+            Glut.glutInitWindowPosition(140, 10);
+            Glut.glutCreateWindow("PONG 2.0");
             Gl.glClearColor(0f, 0f, 0f, 1.0f);
             Gl.glMatrixMode(Gl.GL_MODELVIEW);
             Gl.glLoadIdentity();
