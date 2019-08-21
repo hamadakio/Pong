@@ -80,8 +80,7 @@ namespace BG_10_03_2017
             if (key == Glut.GLUT_KEY_INSERT)
             {
                 start = true;
-                rend.DesenhaStart(false);
-                
+                rend.DesenhaStart(false);               
             }
             
             Glut.glutPostRedisplay();
