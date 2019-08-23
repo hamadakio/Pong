@@ -14,7 +14,7 @@ namespace Pong2._0.Objetos
         {
             float X2 = X + (Size * 2);
             float Y2 = Y + Size;
-
+            Gl.glColor3f(Cores[0], Cores[1], Cores[2]);
             Gl.glRectf(X,Y,X2,Y2);
         }
     }

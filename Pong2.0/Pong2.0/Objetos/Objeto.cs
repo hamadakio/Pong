@@ -8,10 +8,10 @@ namespace Pong2._0.Objetos
     abstract class Objeto
     {
 
-        public float X { get; private set; }
-        public float Y { get; private set; }
+        public float X { get; set; }
+        public float Y { get; set; }
         public float Size { get; private set; }
-        public float[] Cores { get; private set; }
+        public float[] Cores = new float[3];
 
         protected Objeto(float x, float y, float size, float[] cores)
         {
@@ -21,15 +21,18 @@ namespace Pong2._0.Objetos
             Cores = cores;
         }
 
+        protected Objeto(float x, float y, float[] cores)
+        {
+            X = x;
+            Y = y;
+            Cores = cores;
+        }
+
+        protected Objeto()
+        {
+        }
+
         public abstract void Render();
-
-        //public virtual void CheckColisao(Objeto outro)
-        //{
-        //    if ((X + Size) >= )
-        //    {
-
-        //    }
-        //}
 
     }
 }
